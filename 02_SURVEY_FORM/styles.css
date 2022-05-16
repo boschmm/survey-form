@@ -1,0 +1,114 @@
+body {
+  font-family: 'Poppins', serif;
+  background-color: #112B3C;
+}
+#title {
+  font-weight: 800;
+  text-align: center;
+  color: #EFEFEF;
+}
+#description {
+  text-align: center;
+  color: #EFEFEF;
+  margin:-15px auto auto;
+  padding-bottom: 2%;
+  font-weight: 100;
+}
+
+/*Formulario General*/
+#survey-form {
+  margin: auto;
+  padding: 3%;
+  background-color: #F66B0E;
+  border-radius: 10px;
+  opacity: 80%;
+}
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+input::placeholder {
+  font-family: 'Poppins', serif;
+  font-weight: 200;
+}
+.box {
+  display: block;
+  width: 96%;
+  border: #EFEFEF;
+  border-radius: 2px;
+  padding: 1% 1% 1% 2%;
+  font-family: 'Poppins', serif;
+  font-weight: 200;
+}
+.box:focus {
+  outline: none;
+}
+.drop-down {
+  display: block;
+  width: 100%;
+  border: #EFEFEF;
+  border-radius: 2px;
+  padding: 1% 1% 1% 2%;
+  font-family: 'Poppins', serif;
+  font-weight: 200;
+}
+.dropdown:focus {
+  outline: none;
+}
+.section {
+  color: #EFEFEF;
+  font-weight: 600;
+}
+.options {
+  font-family: 'Poppins', serif;
+  color: #EFEFEF;
+  font-weight: 200;
+}
+textarea {
+  resize: none;
+}
+textarea::placeholder {
+  font-family: 'Poppins', serif;
+  font-weight: 200;
+}
+
+/*Comentario*/
+#comment {
+  color: gray;
+}
+
+/*Boton Submit*/
+#submit {
+	box-shadow: 0px 0px 0px 0px #112B3C;
+	background-color:#205375;
+	border-radius:10px;
+	border:1px solid #205375;
+	display:inline-block;
+	cursor:pointer;
+	color:#EFEFEF;
+	font-family: 'Poppins', serif;
+	padding: 2% 8%;
+	text-decoration:none;
+	text-shadow:none;
+  width: 100%;
+}
+#submit:hover {
+	background-color:#112B3C;
+  border:1px solid #112B3C;
+}
+#submit:active {
+	position:relative;
+	top:1px;
+}
+
+@media (min-width: 576px) {
+  #survey-form {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  #survey-form {
+    max-width: 720px;
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title">Personal Information Survey Form</h1>
+    <p id="description"><i>Complete your personal information</i></p>
+
+    <!--Form-->
+    <form id="survey-form">
+
+      <!--Name-->
+      <div class="form-group">
+        <label for="name" id="name-label" class="section">Name</label><br>
+        <input id="name" type="text" class="box" placeholder="Enter your name" required>
+      </div>
+
+      <!--Email-->
+      <div class="form-group">
+        <label for="email" id="email-label" class="section">Email</label><br>
+        <input id="email" type="email" class="box" placeholder="Enter your email" required>
+      </div>
+
+      <!--Age-->
+      <div class="form-group">
+        <label for="number" id="number-label" class="section">Age</label><br>
+        <input id="number" type="number" class="box" placeholder="Age" min="18" max="65">
+      </div>
+
+      <!--Marital State-->
+      <div class="form-group">
+        <label for="dropdown" id="dropdown-label" class="section">Marital Status</label><br>
+        <select id="dropdown" class="drop-down">
+          <option disabled selected value>Select marital status</option>
+          <option value="Single">Single</option>
+          <option value="Married">Married</option>
+          <option value="Widower">Widower</option>
+          <option value="Divorced">Divorced</option>
+        </select>
+      </div>
+
+      <!--Work-->
+      <div class="form-group">
+        <label id="job-label" class="section">Do you currently have a job?</label><br>
+        <input id="yes" type="radio" name="job" value="yes">
+        <label for="yes" class="options">Yes</label><br>
+        <input id="no" type="radio" name="job" value="no">
+        <label for="no" class="options">No</label>
+      </div>
+
+      <!--Fields of work-->
+      <div class="form-group">
+        <label class="section">Which are your favorites fields of work?</label><br>
+        <input id="field1" type="checkbox" value="construction">
+        <label for="field1" class="options">Construction</label><br>
+        <input id="field2" type="checkbox" value="agriculture">
+        <label for="field2" class="options">Agriculture</label><br>
+        <input id="field3" type="checkbox" value="education">
+        <label for="field3" class="options">Education</label><br>
+        <input id="field4" type="checkbox" value="programming">
+        <label for="field4" class="options">Programming</label><br>
+        <input id="field5" type="checkbox" value="energy">
+        <label for="field5" class="options">Energy</label><br>
+      </div>
+
+      <!--Comment-->
+      <div class="form-group">
+        <label for="comment" id="comment-label" class="section">Any comment?</label><br>
+        <textarea id="comment" class="box" rows="5" placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <!--Submit-->
+      <div class="form-group">
+        <input id="submit" type="submit" value="Submit">
+      </div>
+
+    </form>
+  </body>
+</html>
